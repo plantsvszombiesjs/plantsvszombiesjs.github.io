@@ -1623,7 +1623,13 @@ Copyright (c) 2025 Olexandr_43
 
             <div id="plantSelectionFooter">
                 <div style="margin-bottom: 15px;">Selected: <span id="selectedPlantCount">0</span></div>
-                <button id="startGameBtn" class="btn gold">Let's Rock!</button>
+                <button id="startGameBtn" class="btn gold" style="
+                    width: 250px;
+                    padding: 15px 25px;
+                    font-size: 1.2em;
+                    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.4);
+                    transition: all 0.3s ease;
+                ">Let's Rock!</button>
             </div>
         </div>
 
@@ -5590,8 +5596,8 @@ Copyright (c) 2025 Olexandr_43
                 'Confirm Restart',
                 'Are you sure you want to start a new game? Your current progress will be lost.',
                 [
-                    { text: 'Yes, Restart', class: 'secondary', callback: restartGame },
-                    { text: 'No, Cancel' }
+                    { text: 'No, Cancel' },
+                    { text: 'Yes, Restart', class: 'secondary', callback: restartGame }
                 ]
             );
         }
